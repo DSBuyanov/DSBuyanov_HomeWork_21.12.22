@@ -19,12 +19,12 @@ int RandomNumbers(int numberElements, int min, int max)
 
         if (i % 2 == 1)
         {
-            sumElements = sumElements + randomNumbers[i];
+            sumElements += randomNumbers[i];
         }
     }
     return sumElements;
 }
 
 int randomNumbers = RandomNumbers(numberElements, 1, 10);
-
-Console.WriteLine($"\nСумма элементов, стоящих на нечётных позициях: {randomNumbers}");
+Console.WriteLine();
+Console.WriteLine(randomNumbers);
